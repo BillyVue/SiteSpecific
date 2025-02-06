@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col">
                 <form action="#" id="myform" enctype="multipart/form-data">
-                    <label for="capture"><h1 id="title">Take a Picture of the IS Building Sign</h1></label>
+                    <label for="capture"><h1 id="title"><h1></h1></label>
 
                     <input type="file" id="capture" accept="image/*" capture />
                     <br>
@@ -24,9 +24,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-            document.getElementById("title").innerHTML = "Take a Picture of a chair";
-        document.addEventListener("DOMContentLoaded", (e)=>{
-            e.preventDefault();         
+            document.getElementById("title").innerHTML = "You Are An Imposter. Do Your Best to Copy What Everyone Else is Doing";
+        document.addEventListener("DOMContentLoaded", (event)=>{
+            
             let form = document.getElementById('myform');
             //get the captured media file
             let input = document.getElementById('capture');
