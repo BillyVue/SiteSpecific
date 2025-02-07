@@ -9,23 +9,23 @@
 <body>
     <div class="container text-center">
         <div class="row">
-            <div class="col">
+            <div class="col bg-primary-subtle">
                 <h1 id="discuss">
                     You are Innocent. Click Done when you have finished taking your pictures.
                 </h1>
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col bg-primary">
                 <h2 id="goodluck">
-                    Take a Picture of the ISS Building Sign
+                    Take a Picture of the IS Building Sign
                 </h2>
             </div>
         </div>
         <div class="row">
             <div class="col text-center">
                 <p>
-                    <img src="" class="img-fluid img-thumbnail" id="img" alt="Picture">
+                    <img src="" class="img-fluid img-thumbnail" id="img" alt="Photo1">
                 </p>
             </div>
         </div>
@@ -34,13 +34,14 @@
             <div class="col">
                 <form action="#" id="myform" enctype="multipart/form-data">
                     <input type="file" id="capture" accept="image/*" capture />
+                    <label id="capturelabel" for="capture1">Click "Choose File" To Take A Photo</label>
                     <br>
                 </form>
             </div>
             <div class="col"></div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col bg-primary">
                 <h2 id="goodluck2">
                     Take a Picture of a Chair
                 </h2>
@@ -49,7 +50,7 @@
         <div class="row">
             <div class="col text-center">
                 <p>
-                    <img src="" class="img-fluid img-thumbnail" id="img2" alt="Picture">
+                    <img src="" class="img-fluid img-thumbnail" id="img2" alt="Photo2">
                 </p>
             </div>
         </div>
@@ -58,13 +59,14 @@
             <div class="col">
                 <form action="#" id="myform" enctype="multipart/form-data">
                     <input type="file" id="capture2" accept="image/*" capture />
+                    <label id="capturelabel2" for="capture2">Click "Choose File" To Take A Photo</label>
                     <br>
                 </form>
             </div>
             <div class="col"></div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col bg-primary">
                 <h2 id="goodluck3">
                     Take a Picture of Dustin
                 </h2>
@@ -73,7 +75,7 @@
         <div class="row">
             <div class="col text-center">
                 <p>
-                    <img src="" class="img-fluid img-thumbnail" id="img3" alt="Picture">
+                    <img src="" class="img-fluid img-thumbnail" id="img3" alt="Photo3">
                 </p>
             </div>
         </div>
@@ -82,6 +84,7 @@
             <div class="col">
                 <form action="#" id="myform" enctype="multipart/form-data">
                     <input type="file" id="capture3" accept="image/*" capture />
+                    <label id="capturelabel3" for="capture">Click "Choose File" To Take A Photo</label>
                     <br>
                 </form>
             </div>
@@ -102,7 +105,10 @@
                 document.getElementById("capture").style.display = "none";
                 document.getElementById("capture2").style.display = "none";
                 document.getElementById("capture3").style.display = "none";
-                document.getElementById("discuss").innerHTML = "Discuss Who are Imposters"
+                document.getElementById("capturelabel").style.display = "none";
+                document.getElementById("capturelabel2").style.display = "none";
+                document.getElementById("capturelabel3").style.display = "none";
+                document.getElementById("discuss").innerHTML = "Discuss and Root Out Imposters"
             }
         document.addEventListener("DOMContentLoaded", (e)=>{
             e.preventDefault();         
